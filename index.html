@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The iron curtain turns warm!</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  </head>
+  <body id="back">
+    <h1 class="big-title">The iron curtain goes warm!</h1>
+    <h2 id="intro" class="introduction" >This is 1961. It is the height of the Cold War. Tensions between the East and the West are sky-high. Armies and air forces are on alert. Further events are about to come into light...</h2>
+    <div id="question">
+      <p style="margin: 25px 0px;" class="big-question"></p>
+      <ul style="margin: 25px 25px;"><i class='fas fa-hand-point-right'></i></ul>
+    </div>
+    <button type="button" onclick="displayQuizz();" id="next-btn" class="btn">NEXT STEP...</button>
+    <div id="scoreContainer" class="conclusion"></div>
+    <button onclick="window.location.href='./index.html'" id="restart-btn" class="btn hide"><a href="./index.html" style="color: #4b4b4b; font-size: 24px; text-decoration: none;">RESTART</a></button>
+    <audio id="audio" class="hide" src="/images/Dun.mp3"></audio>
+    <audio id="endaudio" class="hide" src="/images/Bullet.mp3"></audio>
+    <script type="module" src="js/Quizztest.js"></script>
+  </body>
+</html>
