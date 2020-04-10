@@ -2,6 +2,11 @@
 
 const ironCurtainQuiz = [
   {
+    question: "The failed bay of pigs invasion to Cuba has been a total fiasco, and an intense embarrassment to the United States. What is to do now with the situation in Cuba? ",
+    options: [],
+    background: "./images/images-failed-bay-of-pigs.jpg",
+  },
+  {
     question: "1/10 / Nikita Khrushchev and Fidel Castro are having secret talks. They're also directing important maneuvers in Cuba. What should the American government do?",
     options: ["Sit and wait, it'll all go away.", "Deploy U2 spy planes over cuba, find out what's going on.", "Lean towards a more pro-communist policy."],
     answer: 1,
@@ -77,7 +82,7 @@ let currentQuizzIndex = 0;
 function displayQuizz(index){
   var quizzGame = document.getElementById("question");
   quizzGame.querySelector("p").innerHTML = ironCurtainQuiz[index].question;
-    if (index < 10) {
+    if (index < 12) {
       document.getElementById("audio").play();
     }
 
@@ -136,7 +141,7 @@ function setAnwserListeners(current) {
       }
     }
   }) 
-  if (current === 10) {
+  if (current === 11) {
     scoreRender(score)
   }
 }
