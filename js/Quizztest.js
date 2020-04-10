@@ -62,7 +62,7 @@ const ironCurtainQuiz = [
   },
   {
     question: "10/10 / With the crisis ended, the Pentagon suggests to attack Cuba anyway. The answer to this is:",
-    options: ["'Yeah, let's go ahead and do away with Castro.'", "'No, the crisis is over: the world believes we won since it only knows the Soviets got scared and pulled back.'", "'Let's provoke the Soviets further with our victory.'"],
+    options: ["'Yeah, let's go ahead and do away with Castro.'", "'No, the crisis is over: the world believes we won since it only knows the Soviets got scared and pulled back.'", "'Let's provoke the reds even further with our victory.'"],
     answer: 1,
     background: "./images/image-question-10.jpg",
   },
@@ -82,7 +82,7 @@ let currentQuizzIndex = 0;
 function displayQuizz(index){
   var quizzGame = document.getElementById("question");
   quizzGame.querySelector("p").innerHTML = ironCurtainQuiz[index].question;
-    if (index < 12) {
+    if (index < 11) {
       document.getElementById("audio").play();
     }
 
@@ -93,7 +93,7 @@ function displayQuizz(index){
     list += `<li><button class="btn-answer"><i class='fas fa-hand-point-right'></i> ${oneOption}</button></li>`
   })
   
-  document.body.style.background = `#719f60 url(${ironCurtainQuiz[index].background}) no-repeat right top`;
+  document.body.style.background = `#c2c8a2 url(${ironCurtainQuiz[index].background}) no-repeat right top`;
   document.body.style.backgroundPosition = "center";
   document.body.style.height = "100vh";
   quizzGame.querySelector("ul").innerHTML = list
@@ -161,66 +161,3 @@ nextButton.addEventListener('click', () => {
   displayQuizz(currentQuizzIndex) // display the question everytime somebody clicks on Next
 })
 
-
-
-
-
-
-
-
-
-
-/*
-// Functions
-function buildQuiz(){ ... }
-function showResults(){ ... }
-
-// Variables
-const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
-const submitButton = document.getElementById('submit');
-const myQuestions = [ ... ];
-
-// Kick things off
-buildQuiz();
-
-// Event listeners
-submitButton.addEventListener('click', showResults);
-
-
-
-function showResults(){
-
-  // gather answer containers from our quiz
-  const answerContainers = quizContainer.querySelectorAll('.answers');
-
-  // keep track of user's answers
-  let numCorrect = 0;
-
-  // for each question...
-  myQuestions.forEach( (currentQuestion, questionNumber) => {
-
-    // find selected answer
-    const answerContainer = answerContainers[questionNumber];
-    const selector = `input[name=question${questionNumber}]:checked`;
-    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-    // if answer is correct
-    if(userAnswer === currentQuestion.correctAnswer){
-      // add to the number of correct answers
-      numCorrect++;
-
-      // color the answers green
-      answerContainers[questionNumber].style.color = 'lightgreen';
-    }
-    // if answer is wrong or blank
-    else{
-      // color the answers red
-      answerContainers[questionNumber].style.color = 'red';
-    }
-  });
-
-  // show number of correct answers out of total
-  resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-}
-*/
