@@ -2,18 +2,18 @@
 
 const ironCurtainQuiz = [
   {
-    question: "The failed bay of pigs invasion to Cuba has been a total fiasco, and an intense embarrassment to the United States. What is to do now with the situation in Cuba? ",
+    question: "The failed bay of pigs invasion to Cuba has been a total fiasco, and an intense embarrassment to the United States. What to do now with the situation in Cuba? ",
     options: [],
     background: "./images/images-failed-bay-of-pigs.jpg",
   },
   {
     question: "1/10 / Nikita Khrushchev and Fidel Castro are having secret talks. They're also directing important maneuvers in Cuba. What should the American government do?",
-    options: ["Sit and wait, it'll all go away.", "Deploy U2 spy planes over cuba, find out what's going on.", "Lean towards a more pro-communist policy."],
+    options: ["Sit and wait, it'll all go away.", "Deploy U2 spy planes over Cuba, find out what's going on.", "Lean towards a more pro-communist policy."],
     answer: 1,
     background: "./images/image-question-1.jpg",
   },
   {
-    question: "2/10 / A U2 spy plane has taken high-altitude pictures of suspicious giant cylindrical objects. They are:",
+    question: "2/10 / A U2 spy plane has taken high-altitude pictures of suspicious giant cylindrical objects in Cuba. They are:",
     options: ["Giant Havana cigar monuments.", "Outdoor sewer tunnels.", "Nuclear missile installations."],
     answer: 2,
     background: "./images/image-question-2.jpg",
@@ -25,7 +25,7 @@ const ironCurtainQuiz = [
     background: "./images/image-question-3.jpg",
   },
   {
-    question: "4/10 / With all top officials aware of the situation, and with an already scheduled meeting with Soviet Ambassadors, the right move is to:",
+    question: "4/10 / With all top US officials aware of the situation, and with an already scheduled meeting with Soviet Ambassadors, the right move is to:",
     options: ["Confront the Ambassadors with anger and threats.", "Figure out a plan, and not let them know that we know.", "Beg the Soviets to halt their installations."],
     answer: 1,
     background: "./images/image-question-4.jpg",
@@ -44,7 +44,7 @@ const ironCurtainQuiz = [
   },
   {
     question: "7/10 / The Soviets are confused over whether to pull entirely back or to press on. The best way to put more pressure on them is to:",
-    options: ["Start firing at their cargo ships.", "Close down their Embassy in Washington.", "Denounce their plot to the world with photographic evidence, at the United Nations."],
+    options: ["Start firing at their cargo ships.", "Close down their Embassy in Washington.", "Denounce their plot to the world with photographic evidence at the United Nations."],
     answer: 2,
     background: "./images/image-question-7.jpg",
   },
@@ -55,7 +55,7 @@ const ironCurtainQuiz = [
     background: "./images/image-question-8.jpg",
   },
   {
-    question: "9/10 / A trusted friend of Khrushchev has contacted the White House with a message: the Kremlin will remove the Russian missiles in Cuba in exchange of the removal of American missiles in Turkey. The right response is to:",
+    question: "9/10 / A trusted friend of Khrushchev has contacted the White House with a message: the Kremlin will remove the Russian missiles in Cuba in exchange for the removal of American missiles in Turkey. The right response is to:",
     options: ["Agree, but in secret, with a 6-month gap, and no linkage.", "Ignore and say 'no deal, we'll attack'.", "Ask world opinion and brandish 'peace at any price'."],
     answer: 0,
     background: "./images/image-question-9.jpg",
