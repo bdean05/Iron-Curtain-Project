@@ -22,7 +22,7 @@ const ironCurtainQuiz = [
     question: "3/10 / The U2 camera footage has arrived back to base. The number one priority is to show it to:",
     options: ["The president.", "The Pentagon.", "The CIA."],
     answer: 0,
-    background: "./../images/image-question-3.jpg",
+    background: "./images/image-question-3.jpg",
   },
   {
     question: "4/10 / With all top officials aware of the situation, and with an already scheduled meeting with Soviet Ambassadors, the right move is to:",
