@@ -130,10 +130,10 @@ function setAnwserListeners(current) {
         if(verifyAnswer(ironCurtainQuiz[current],index)){
           btn.style.background = "green"
           score += 10
-          new Audio('./../images/Trumpet.mp3').play()
+          new Audio('./images/Trumpet.mp3').play()
         }else{
           btn.style.background = "red";
-          new Audio('./../images/Bomb.mp3').play()
+          new Audio('./images/Bomb.mp3').play()
         }
         clicks ++
       } else {
